@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background: linear-gradient(315deg, #094683, #570BAD);
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.container{
+    width: 100%;
+    max-width: 500px;
+    background-color: #96E9C6;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 25px;
+    overflow-wrap: break-word
+}
+
+/* headding */
+
+.headding{
+    display: flex;
+    gap: 7px;
+    margin-bottom: 15px;
+}
+
+.headding h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+.headding img{
+    height: 35px;
+}
+
+/* adding to-do lists */
+
+.adding{
+    background-color: blanchedalmond;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.add-text{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 15px;
+    flex: 1;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.add-btn{
+    border: 0;
+    outline: 0;
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: orangered;
+}
+
+@media (max-width: 600px) {
+    .add-btn{
+        padding: 15px 20px;
+    }
+}
+
+/* to-do list tasks */
+
+.task{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    border-radius: 50px;
+    background-image: url(./images/images/unchecked.png);
+    border: rgba(135, 133, 133, 0.986) solid 1px;
+    background-size: cover;
+    background-position: center;
+    top: 5px;
+    left: 1px;
+    transition: .2s;
+}
+
+ul .task-complete{
+    color: rgb(72, 71, 71);
+    text-decoration: line-through;
+}
+ul .task-complete span{
+    color: black;
+}
+
+ul .task-complete::before{
+    background-image: url(./images/images/checked.png);
+    border: none;
+}
+
+ul li span{
+    position: absolute;
+    right: -6px;
+    top: 0px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    transition: .2s;
+}
+
+ul li span:hover{
+    background-color: orangered;
+}
+
