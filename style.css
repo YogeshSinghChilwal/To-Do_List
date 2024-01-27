@@ -5,7 +5,7 @@
 }
 
 .main{
-    background: linear-gradient(315deg, #094683, #570BAD);
+    background: #0C2D57;
     width: 100%;
     min-height: 100vh;
     padding: 10px;
@@ -14,7 +14,7 @@
 .container{
     width: 100%;
     max-width: 500px;
-    background-color: #96E9C6;
+    background-color: #EFECEC;
     margin: 100px auto 0;
     border-radius: 10px;
     padding: 25px;
