@@ -72,6 +72,9 @@
     .add-btn{
         padding: 15px 20px;
     }
+    .container{
+        padding: 25px 5px;
+    }
 }
 
 /* to-do list tasks */
